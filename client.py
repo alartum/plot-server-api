@@ -2,6 +2,7 @@ from config import Config
 import requests
 from cryptography.fernet import Fernet
 import json
+import time
 
 class PlotAPI():
     def __init__(self, username, key, api_url, verbose=False):
@@ -67,13 +68,17 @@ class Project():
 key = b'2gS8MlgPhs-jknxmKJi9wBasWYvXjE6lXjGCnWMobns='
 api_url = Config.API_ADDRESS
 
-api = PlotAPI("alartum", key, api_url)
+api = PlotAPI("alartum", key, api_url, verbose=True)
 project = Project("project1", api, fresh_start=True)
 
-project.add_files(["data1", "data2", "bad_file"])
+project.add_files(["sin", "cos"])
 project.prepare_project()
 
-for i in range(3):
-    project.add_frame("data1", i, i**2)
-    project.add_frame("data2", i, i**0.5)
+import math
+t = 0
+while True:
+    project.add_frame("sin", t, math.sin(t/20))
+    project.add_frame("cos", t, math.cos(t/20))
     project.send_frames()
+    time.sleep(2)
+    t += 1

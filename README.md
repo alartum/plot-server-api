@@ -5,11 +5,15 @@ Python API for communication with plot-server.
 
 1. Register a user on the PlotServer of your choice;
 2. Get your API key;
-3. Download this library:
+3. Install dependencies:
+```bash
+$ pip3 install cryptography requests
+```
+4. Download this library:
   ```bash
   $ git clone https://github.com/alartum/plot-server-api.git
   ```
-4. Integrate API into your application:
+5. Integrate API into your application:
 ```python
 from plot_api import PlotAPI, Project
 

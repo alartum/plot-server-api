@@ -7,7 +7,7 @@ Python API for communication with plot-server.
 2. Get your API key;
 3. Download this library:
   ```bash
-  $ git clone git@github.com:alartum/plot-server-api.git
+  $ git clone https://github.com/alartum/plot-server-api.git
   ```
 4. Integrate API into your application:
 ```python

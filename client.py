@@ -1,6 +1,6 @@
-from config import Config
 import time
-from plot_api import PlotAPI, Project
+from plotserver_api import PlotAPI, Project
+from config import Config
 
 key = b'2gS8MlgPhs-jknxmKJi9wBasWYvXjE6lXjGCnWMobns='
 api_url = Config.API_ADDRESS

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="plotserver_api",
-    version="0.0.3",
+    version="0.0.1",
     author="Aleksandr Artemenkov",
     author_email="alartum@gmail.com",
     description="Python API for PlotServer.",

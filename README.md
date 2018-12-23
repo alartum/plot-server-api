@@ -1,4 +1,4 @@
-# plot-server-api
+# PlotServer-API
 Python API for communication with [PlotServer](https://github.com/alartum/plotserver).
 
 # How to Use
@@ -18,7 +18,7 @@ key = b'5uSN9ojYpMiI7gQ5k5NWR6kYvenDX97CmxC5aaUGdH8='
 api_url = "http://someadress"
 
 # Initialize API manager
-api = PlotAPI("alartum", key, api_url, verbose=True)
+api = PlotServerAPI("alartum", key, api_url, verbose=True)
 # And create new project with
 project = Project("project1", api, fresh_start=True)
 

@@ -1,5 +1,5 @@
 # plot-server-api
-Python API for communication with plot-server.
+Python API for communication with [PlotServer](https://github.com/alartum/plotserver).
 
 # How to Use
 
@@ -11,7 +11,7 @@ $ pip install plotserver-api
 ```
 4. Integrate API into your application:
 ```python
-from plotserver_api import PlotAPI, Project
+from plotserver_api import PlotServerAPI, Project
 
 # Set key and API address
 key = b'5uSN9ojYpMiI7gQ5k5NWR6kYvenDX97CmxC5aaUGdH8='

@@ -1,7 +1,8 @@
 import requests
 from cryptography.fernet import Fernet
 import json
-class PlotAPI():
+
+class PlotServerAPI():
     def __init__(self, username, key, api_url, verbose=False):
         self.username = username
         self.key = key 

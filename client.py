@@ -1,11 +1,11 @@
 import time
-from plotserver_api import PlotAPI, Project
+from plotserver_api import PlotServerAPI, Project
 from config import Config
 
 key = b'2gS8MlgPhs-jknxmKJi9wBasWYvXjE6lXjGCnWMobns='
 api_url = Config.API_ADDRESS
 
-api = PlotAPI("alartum", key, api_url, verbose=True)
+api = PlotServerAPI("alartum", key, api_url, verbose=True)
 project = Project("project1", api, fresh_start=True)
 
 project.add_files(["sin", "cos"])

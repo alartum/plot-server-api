@@ -5,14 +5,19 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="plotserver_api",
-    version="0.0.1",
-    author="alartum",
+    version="0.0.3",
+    author="Aleksandr Artemenkov",
     author_email="alartum@gmail.com",
     description="Python API for PlotServer.",
+    license = 'MIT',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/alartum/plot-server-api",
+    url="https://github.com/alartum/plotserver-api",
     packages=setuptools.find_packages(),
+    install_requires=[
+          'requests',
+          'cryptography',
+      ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
